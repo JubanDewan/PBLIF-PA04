@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="">
+    <div class="fly1"></div>
+    <div class="fly2"></div>
+    <div class="fly3"></div>
+    
+    <div class="container py-5">
+         <div class="row align-items-stretch g-4">
+        <div class="col-12 col-lg-6">
+        <div class="bg-blur cardc shadowc border-0 w-100 " style="max-width: 500px;">
+            <div class="card-body p-4 p-md-5">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold mb-1 text-shadow font-main">Login</h2>
+                    <!-- <p class="text-muted mb-0">Silakan Login</p> -->
+                </div>
+
+                <form action="dashboard.html">
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Masuk Sebagai:</label>
+                        <select name="role" id="role" class="form-select hoverable">
+                            <option value="pemilik">Pemilik</option>
+                            <option value="pengelola">Pengelola</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:</label>
+                        <input type="text" id="username" name="username" class="form-control hoverable" placeholder="Masukkan username " required >
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control hoverable" placeholder="Masukkan password" required>
+                    </div>
+
+                    <div class="d-grid pt-20">
+                        <button type="submit" class="btn font-main"><i class="fa-solid fa-right-to-bracket"></i> Masuk</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class=" col-12 col-lg-6 order-2 order-lg-1 bg-blur cardc shadowc align-item-center">
+                
+                    <div class="mb-2 p-4 p-md-4">
+                    <h1 class="fw-bold text-shadow text-center font-main">Simple & Joy</h1>
+                    <h2 class="fw-bold  text-shadow text-center font-main">Wash</h2>
+                    <p class="lead text-muted mb-0 text-center hoverable">
+                        Sistem manajemen layanan cuci kendaraan yang cepat, rapi, dan mudah digunakan.
+                    </p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img class="w-50 hoverable" src="img/logo.png" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center text-center text-muted fw-bold hoverable">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sint!</p>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+    <footer class="footer text-dark text-center py-3 fixed-bottom bg-blur shadowc">
+        <div class="container text-muted">
+            <small>&copy; 2026 Safe & Joy Wash</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body { font-family: Arial, Helvetica, sans-serif; background: #e8eeeb; }
+
+.shadowc { box-shadow: 3px 6px 6px rgb(0, 0, 0, 0.25); }
+.cardc { border-radius: 15px; }
+.text-shadow { text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2); }
+
+footer { background: #0d6dfd; font-weight: 600; }
+
+/* Layout dua kolom */
+main.container-fluid { padding: 0; }
+.login-side { padding-bottom: 4.5rem !important; } /* ruang untuk footer */
+
+.intro-side {
+  position: relative;
+  overflow: hidden;
+  background: #0d6dfd;
+  padding-bottom: 3.5rem;
+}
+.intro-content { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+.intro-title { font-size: clamp(1.8rem, 3.5vw, 2.8rem); line-height: 1.2; text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2); }
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 1.25rem;
+}
+
+/* Lingkaran dekorasi (di dalam panel kanan) */
+.fly1, .fly2 {
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.12;
+  filter: blur(8px);
+  z-index: 0;
+}
+.fly1 { top: -60px; right: -60px; width: 260px; height: 260px; }
+.fly2 { bottom: 40px; left: -70px; width: 200px; height: 200px; }
+
+/* Input */
+input, select { box-shadow: inset 1px 3px 9px rgba(0, 0, 0, 0.10); transition: all 0.2s ease; }
+input.form-control:focus, select.form-select:focus { box-shadow: inset 0 4px 8px rgb(0, 0, 0, 0.25); border: 1px solid #e0e5ec; }
+input.form-control:hover, select.form-select:hover { box-shadow: inset 0px 4px 8px rgb(0, 0, 0, 0.25); }
+
+/* Button */
+.btn { box-shadow: inset 1px 3px 9px rgba(0, 0, 0, 0.10); transition: all 0.1s ease; border: 1px solid #e0e5ec; cursor: pointer; background-color: white; font-weight: bold; }
+.btn:hover { transform: scale(1.05) translateY(-1px); border: 1px solid rgba(0, 0, 0, 0.0); background: #0d6dfd; color: white; box-shadow: -5px -5px 10px rgba(255, 255, 255, 1), 5px 5px 10px rgba(163, 177, 198, 1); }
+.btn:active { border: 1px solid #0d6dfd8e; transform: scale(0.95); box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.25); }
+
+/* Mobile: form tetap di atas, pengenalan di bawah */
+@media (max-width: 991.98px) {
+  .login-side { min-height: 100vh; }
+}
