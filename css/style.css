@@ -116,11 +116,11 @@ input.form-control:hover,select.form-select:hover { box-shadow: inset 0px 4px 8p
 }
 
 ::view-transition-old(root) {
-    animation: blur-out 0.5s ease both;
+    animation: blur-out 0.2s ease both;
 }
 
 ::view-transition-new(root) {
-    animation: blur-in 0.5s ease both;
+    animation: blur-in 0.2s ease both;
 }
 
 @keyframes blur-out {
