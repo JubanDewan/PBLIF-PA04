@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Layanan - S&amp;J Wash</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <body>
+<body data-page="layanan">
 
   <div class="fly1"></div>
   <div class="fly2"></div>
@@ -22,8 +21,8 @@
       <a class="navbar-brand font-main fw-bold" href="#">
         <img src="./img/logo-nav.png" alt="logo SJ WASH" class="logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bstarget="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" arialabel="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <form class="d-flex position-absolute top-50 start-50 translate-middle w-50">
@@ -38,10 +37,10 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle font-main" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" ariaexpanded="false">
+              data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fas fa-user-circle font-main"></i>
             </a>
-            <ul class="dropdown-menu dropdown-menu-end" arialabelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Profil Saya</a></li>
               <li><a class="dropdown-item" href="#">Pengaturan</a></li>
               <li>
@@ -74,40 +73,22 @@
         </li>
       </ul>
     </div>
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card shadowc bg-blur">
-            <div class="card-header">
-              <div class="d-flex justify-content-between align-items-center">
-                <h2 class="font-main-unhover w-60">LAYANAN</h2>
-                <select class="form-select w-25 hoverable font-main fw-bold" aria-label="Default select example">
-                  <option selected>Periode Pesanan & Cucian</option>
-                  <option value="1">2024</option>
-                  <option value="2">2025</option>
-                  <option value="3">2026</option>
-                </select>
-                <button type="button" class="btn font-main hoverable  w-10" data-bs-toggle="modal"
-                  data-bs-target="#modalTambahOrder">Tambah Order</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-
-
-    <footer class="footer text-dark text-center py-3 fixed-bottom bg-blur shadowc">
+    <div class="container mt-4 mb-5 pb-5"><div class="card shadowc bg-blur mb-4"><div class="card-header"><div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+<h2 class="font-main-unhover m-0">LAYANAN</h2><button type="button" class="btn font-main hoverable no-print" data-bs-toggle="modal" data-bs-target="#modalTambahOrder"><i class="fa-solid fa-plus"></i> Tambah Layanan</button></div></div><div class="card-body"><div class="table-responsive"><table class="table table-bordered order-table mb-0 "><thead class="text-center"><tr><th>No</th><th>Nama Layanan</th><th>Harga</th><th>Lama Pengerjaan</th><th>Aksi</th></tr></thead><tbody id="tblBody"></tbody></table></div></div></div></div></div>
+<div class="modal fade" id="modalTambahOrder" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+<div class="modal-header"><h5 class="modal-title font-main">Tambah</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body"><form id="formData"><div class="row g-3"><div class="col-12"><label class="form-label">Nama Layanan</label><input id="f_nama" type="text" class="form-control hoverable" required placeholder="Contoh: Cuci Kering"></div><div class="col-md-6"><label class="form-label">Harga per Kg (Rp)</label><input id="f_harga" type="number" class="form-control hoverable" required min="0" step="500"></div><div class="col-md-6"><label class="form-label">Lama Pengerjaan (hari)</label><input id="f_hari" type="number" class="form-control hoverable" required min="1"></div></div></form></div>
+<div class="modal-footer"><button type="button" class="btn btn-cancel font-cancel" data-bs-dismiss="modal">Batal</button>
+<button type="submit" form="formData" class="btn font-main btn-success">Simpan</button></div></div></div></div>
+<footer class="footer text-dark text-center py-3 fixed-bottom bg-blur shadowc">
       <div class="container text-muted">
         <small>&copy; 2026 Safe & Joy Wash</small>
       </div>
     </footer>
 
 
-    <script src="order.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

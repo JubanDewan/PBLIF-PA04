@@ -116,11 +116,11 @@ input.form-control:hover,select.form-select:hover { box-shadow: inset 0px 4px 8p
 }
 
 ::view-transition-old(root) {
-    animation: blur-out 0.2s ease both;
+    animation: blur-out 0.5s ease both;
 }
 
 ::view-transition-new(root) {
-    animation: blur-in 0.2s ease both;
+    animation: blur-in 0.5s ease both;
 }
 
 @keyframes blur-out {
@@ -135,4 +135,13 @@ input.form-control:hover,select.form-select:hover { box-shadow: inset 0px 4px 8p
         opacity: 0;
         filter: blur(20px);
     }
+}
+
+/* ---- Tambahan halaman isi ---- */
+.table { --bs-table-bg: transparent; }
+.stat-card { border-radius: 15px; padding: 1rem 1.25rem; }
+.stat-card .angka { font-size: 1.6rem; font-weight: 700; color: #064ead; }
+.card-body { overflow-x: auto; }
+@media print {
+  .navbar, .sidebar, footer, .fly1, .fly2, .fly3, .no-print { display: none !important; }
 }
